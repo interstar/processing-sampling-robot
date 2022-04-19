@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><DecentSampler  pluginVersion="1"><groups ><group ><sample rootNote="39" path="manga_D#3_60.wav" loNote="36" hiNote="38" />
+<sample rootNote="42" path="manga_F#3_60.wav" loNote="39" hiNote="41" />
+<sample rootNote="45" path="manga_A3_60.wav" loNote="42" hiNote="44" />
+<sample rootNote="48" path="manga_C4_60.wav" loNote="45" hiNote="47" />
+<sample rootNote="51" path="manga_D#4_60.wav" loNote="48" hiNote="50" />
+<sample rootNote="54" path="manga_F#4_60.wav" loNote="51" hiNote="53" />
+<sample rootNote="57" path="manga_A4_60.wav" loNote="54" hiNote="56" />
+<sample rootNote="60" path="manga_C5_60.wav" loNote="57" hiNote="59" />
+<sample rootNote="63" path="manga_D#5_60.wav" loNote="60" hiNote="62" />
+<sample rootNote="66" path="manga_F#5_60.wav" loNote="63" hiNote="65" />
+<sample rootNote="69" path="manga_A5_60.wav" loNote="66" hiNote="68" />
+<sample rootNote="72" path="manga_C6_60.wav" loNote="69" hiNote="71" />
+<sample rootNote="75" path="manga_D#6_60.wav" loNote="72" hiNote="74" />
+<sample rootNote="78" path="manga_F#6_60.wav" loNote="75" hiNote="77" />
+<sample rootNote="81" path="manga_A6_60.wav" loNote="78" hiNote="80" />
+<sample rootNote="84" path="manga_C7_60.wav" loNote="81" hiNote="83" />
+<sample rootNote="87" path="manga_D#7_60.wav" loNote="84" hiNote="86" />
+<sample rootNote="90" path="manga_F#7_60.wav" loNote="87" hiNote="89" />
+<sample rootNote="93" path="manga_A7_60.wav" loNote="90" hiNote="92" />
+<sample rootNote="96" path="manga_C8_60.wav" loNote="93" hiNote="95" />
+</group></groups></DecentSampler>

@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?><DecentSampler  pluginVersion="1"><groups ><group ><sample rootNote="39" path="manga_D#3_60.wav" loNote="36" hiNote="38" />
+<?xml version="1.0" encoding="UTF-8"?><DecentSampler  pluginVersion="1">
+
+
+<ui  bgMode="top_left" layoutMode="relative" width="812" bgImage="background.png" height="375" ><tab  >
+
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="2.0" width="70" x="125" y="75" label="Resonance" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_FILTER_RESONANCE" position="0" type="effect" ></binding></labeled-knob>
+<labeled-knob  minValue="60.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="22000.0" width="70" x="35" y="75" label="Cutoff" type="float" textColor="FFFFFFFF" value="22000.0" ><binding  level="instrument" parameter="FX_FILTER_FREQUENCY" position="0" type="effect" ></binding></labeled-knob>
+
+
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="215" y="75" label="Reverb" type="float" textColor="FFFFFFFF" value="0.5" ><binding  level="instrument" parameter="FX_REVERB_WET_LEVEL" position="1" type="effect" ></binding></labeled-knob>
+
+
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="305" y="75" label="Delay Time" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_DELAY_TIME" position="2" type="effect" ></binding></labeled-knob>
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="395" y="75" label="Delay Amt" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_WET_LEVEL" position="2" type="effect" ></binding></labeled-knob>
+
+
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="10.0" width="70" x="575" y="75" label="Chorus Rate" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_MODE_RATE" position="3" type="effect" ></binding></labeled-knob>
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="665" y="75" label="Chorus Mix" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_MIX" position="3" type="effect" ></binding></labeled-knob>
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="485" y="75" label="Chorus Depth" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_MOD_DEPTH" position="3" type="effect" ></binding></labeled-knob>
+
+</tab></ui>
+<effects  >
+<effect  type="lowpass_4pl" resonance="0.7" frequency="22000" ></effect>
+<effect  roomSize="0.7" damping="0.3" type="reverb" wetLevel="0.5" ></effect>
+<effect  feedback="0.2" stereoOffset="0.01" delayTime="0.5" type="delay" wetLevel="0.5" ></effect>
+<effect  modDepth="0.2" modRate="0.2" type="chorus" mix="0.5" ></effect>
+</effects>
+
+
+
+<groups ><group ><sample rootNote="39" path="manga_D#3_60.wav" loNote="36" hiNote="38" />
 <sample rootNote="42" path="manga_F#3_60.wav" loNote="39" hiNote="41" />
 <sample rootNote="45" path="manga_A3_60.wav" loNote="42" hiNote="44" />
 <sample rootNote="48" path="manga_C4_60.wav" loNote="45" hiNote="47" />

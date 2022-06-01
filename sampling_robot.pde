@@ -6,31 +6,33 @@ import ddf.minim.*;
 import themidibus.*;
 
 Minim minim;
-AudioInput in;
+AudioInput AUDIO_INPUT;
 
+// SampleRobot(String nr, IGraphic gr, IntRange nRange, IntRange vRange, int ndl, int sl) 
 
-SampleRobot robbie = new SampleRobot("sax",60,36,5,3,2000,5000);
+IGraphic graphic = new RandomLines("WarpGuitar");
+SampleRobot robbie = new SampleRobot("warp_guit",graphic,noteRangeOctsStartStep(2,36,12),
+                                     volRange(20,100,40),500,1000);
 
 void setup() {
-  size(512, 200, P3D);
+  size(812, 375 );
  
   // List all available Midi devices on STDOUT. This will show each device's index and name.
   MidiBus.list(); 
  
   minim = new Minim(this);
-  in = minim.getLineIn(Minim.MONO);  
+  AUDIO_INPUT = minim.getLineIn(Minim.MONO);  
   textFont(createFont("Arial", 12));
+
+  background(0); 
+  stroke(255);
 }
 
 
 void draw() {
-  background(0); 
-  stroke(255);
+ 
   robbie.step();
+  robbie.draw();
   
-  // draw the waveforms
-  for(int i = 0; i < in.bufferSize() - 1; i++) {
-    line(i, 50 + in.left.get(i)*50, i+1, 50 + in.left.get(i+1)*50);
-    line(i, 150 + in.right.get(i)*50, i+1, 150 + in.right.get(i+1)*50);
-  }
+
 }

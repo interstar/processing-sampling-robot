@@ -51,6 +51,7 @@ class BothRanges {
         noteRange.advance();
       } else {
         volRange.advance();
+        if (volRange._current>127) { volRange._current = 127; }
       }
     }
   }

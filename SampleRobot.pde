@@ -110,7 +110,8 @@ class SampleRobot {
     long currentTime = millis(); // current time in milliseconds
 
     if ((currentTime > noteOnTime) && (!startedFlag)) {
-      decentBuilder.addSampleLine(currentNote, bothRanges.getStep(), currentFileName);
+      decentBuilder.addSampleLine(currentNote, bothRanges.getStep(), 
+                  currentVol, bothRanges.volRange.step, currentFileName);
       bus.sendNoteOn(0, currentNote, currentVol);
       startedFlag = true;
       return;

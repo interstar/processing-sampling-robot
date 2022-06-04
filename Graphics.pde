@@ -33,7 +33,7 @@ class RandomRects implements IGraphic {
   boolean isFinished() {
     return finishedDrawingFlag;
   }
-  
+
   void draw() {
     if (isDrawing()) {
       counter=counter+1;
@@ -47,12 +47,14 @@ class RandomRects implements IGraphic {
   }
 
   void innerDraw() {
-    for (int i=0; i<1; i++) {
-      fill(random(200), random(200), random(255));
-      rect(random(width), random(height), random(100), random(100));
+    for (int j=0; j<3; j++) {
+      for (int i=0; i<3; i++) {
+        fill(random(200), random(200), random(255));
+        rect(random(width), random(height), random(100), random(100));
+      }
+      filter(BLUR);
+      rotate(counter*0.4);
     }
-    filter(BLUR);
-    rotate(0.4);
   }
 
   void endAndSave() {
@@ -70,9 +72,9 @@ class RandomRects implements IGraphic {
 class RandomLines extends RandomRects {
 
   RandomLines(String name) {
-    super(name);  
+    super(name);
   }
-  
+
   void innerDraw() {
     strokeWeight(4);
     for (int i=0; i<5; i++) {
@@ -84,4 +86,23 @@ class RandomLines extends RandomRects {
     rotate(counter*0.4);
     filter(BLUR);
   }
+}
+
+class MangaRects extends RandomRects {
+  
+  MangaRects(String name) {
+    super(name);
+  }
+  
+  void innerDraw() {
+    for (int j=0; j<6; j++) {
+      for (int i=0; i<6; i++) {
+        fill(100+random(200), 100, 125+random(50));
+        rect(random(width), random(height), random(100), random(100));
+      }
+      filter(BLUR);
+      rotate(counter*0.4);
+    }
+  }
+  
 }

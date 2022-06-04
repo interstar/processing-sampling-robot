@@ -185,9 +185,10 @@ class DecentBuilder {
     allEffects = makeEffects();
   }
  
-  void addSampleLine(int note, int step, String fileName) {
+  void addSampleLine(int note, int step, int vel, int velStep, String fileName) {
+     if (vel-1 < 0) { return; }
      samples = samples + "\n<sample rootNote=\"" + note + "\" path=\"" + fileName + 
-       "\" 
+       "\" loVel=\"" + (vel-velStep) + "\" hiVel=\"" + (vel-1) + 
        "\" loNote=\"" + (note-step) + "\" hiNote=\""+(note-1) +"\" />";
   }
 

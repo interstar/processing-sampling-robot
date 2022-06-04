@@ -10,9 +10,9 @@ AudioInput AUDIO_INPUT;
 
 // SampleRobot(String nr, IGraphic gr, IntRange nRange, IntRange vRange, int ndl, int sl) 
 
-IGraphic graphic = new RandomLines("WarpGuitar");
-SampleRobot robbie = new SampleRobot("warp_guit",graphic,noteRangeOctsStartStep(2,36,12),
-                                     volRange(20,100,40),500,1000);
+IGraphic graphic = new MangaRects("Manga");
+SampleRobot robbie = new SampleRobot("manga",graphic,noteRangeOctsStartStep(1,36,12),
+                                     volRange(0,127,127),10,10);
 
 void setup() {
   size(812, 375 );

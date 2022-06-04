@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler  pluginVersion="1" >
+<ui  bgMode="top_left" layoutMode="relative" width="812" bgImage="background.png" height="375" ><tab  >
+
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="2.0" width="70" x="125" y="75" label="Resonance" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_FILTER_RESONANCE" position="0" type="effect" ></binding></labeled-knob>
+<labeled-knob  minValue="60.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="22000.0" width="70" x="35" y="75" label="Cutoff" type="float" textColor="FFFFFFFF" value="22000.0" ><binding  level="instrument" parameter="FX_FILTER_FREQUENCY" position="0" type="effect" ></binding></labeled-knob>
+
+
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="215" y="75" label="Reverb" type="float" textColor="FFFFFFFF" value="0.5" ><binding  level="instrument" parameter="FX_REVERB_WET_LEVEL" position="1" type="effect" ></binding></labeled-knob>
+
+
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="305" y="75" label="Delay Time" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_DELAY_TIME" position="2" type="effect" ></binding></labeled-knob>
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="395" y="75" label="Delay Amt" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_WET_LEVEL" position="2" type="effect" ></binding></labeled-knob>
+
+
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="10.0" width="70" x="575" y="75" label="Chorus Rate" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_MODE_RATE" position="3" type="effect" ></binding></labeled-knob>
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="665" y="75" label="Chorus Mix" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_MIX" position="3" type="effect" ></binding></labeled-knob>
+<labeled-knob  minValue="0.0" textSize="24" trackBackgroundColor="66999999" trackForegroundColor="ccffffff" maxValue="1.0" width="70" x="485" y="75" label="Chorus Depth" type="float" textColor="FFFFFFFF" value="0.0" ><binding  level="instrument" parameter="FX_MOD_DEPTH" position="3" type="effect" ></binding></labeled-knob>
+
+</tab></ui>
+<effects  >
+<effect  type="lowpass_4pl" resonance="0.7" frequency="22000" ></effect>
+<effect  roomSize="0.7" damping="0.3" type="reverb" wetLevel="0.5" ></effect>
+<effect  feedback="0.2" stereoOffset="0.01" delayTime="0.5" type="delay" wetLevel="0.5" ></effect>
+<effect  modDepth="0.2" modRate="0.2" type="chorus" mix="0.5" ></effect>
+</effects>
+<groups  >
+<group  >
+
+<sample rootNote="40" path="surf_horn_E3_50.wav" loNote="36" hiNote="39" />
+<sample rootNote="44" path="surf_horn_G#3_50.wav" loNote="40" hiNote="43" />
+<sample rootNote="48" path="surf_horn_C4_50.wav" loNote="44" hiNote="47" />
+<sample rootNote="52" path="surf_horn_E4_50.wav" loNote="48" hiNote="51" />
+<sample rootNote="56" path="surf_horn_G#4_50.wav" loNote="52" hiNote="55" />
+<sample rootNote="60" path="surf_horn_C5_50.wav" loNote="56" hiNote="59" />
+<sample rootNote="64" path="surf_horn_E5_50.wav" loNote="60" hiNote="63" />
+<sample rootNote="68" path="surf_horn_G#5_50.wav" loNote="64" hiNote="67" />
+<sample rootNote="72" path="surf_horn_C6_50.wav" loNote="68" hiNote="71" />
+<sample rootNote="76" path="surf_horn_E6_50.wav" loNote="72" hiNote="75" />
+<sample rootNote="80" path="surf_horn_G#6_50.wav" loNote="76" hiNote="79" />
+<sample rootNote="84" path="surf_horn_C7_50.wav" loNote="80" hiNote="83" />
+<sample rootNote="88" path="surf_horn_E7_50.wav" loNote="84" hiNote="87" />
+<sample rootNote="92" path="surf_horn_G#7_50.wav" loNote="88" hiNote="91" />
+<sample rootNote="96" path="surf_horn_C8_50.wav" loNote="92" hiNote="95" />
+</group>
+</groups>
+</DecentSampler>
+

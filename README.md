@@ -14,7 +14,7 @@ And this video for the June 1st, update : https://www.youtube.com/watch?v=P-pL3Y
 
 ### Update June 1st 2022
 
-The sampling robot now also makes a cover, add some standard effects and can sample at a range of velocities.
+The sampling robot now also makes a cover, adds some standard effects and can sample at a range of velocities.
 
 To use, set up your external synth connected by both audio and MIDI
 
@@ -23,17 +23,17 @@ To use, set up your external synth connected by both audio and MIDI
 // Processing is a great random / algorithmic graphics environment, and you can easily
 // make your own covers simply by creating your own instance of an IGraphic object
 // The argument here is the title which will be added to the instrument
-IGraphic graphic = new RandomRects("My Instrument"); 
+IGraphic cover = new RandomRects("My Instrument"); 
 
 // This defines the particular robot / parameters you want
 // myInstrument is the root for the file names,
-// graphic is the IGraphic class to draw the cover
-// noteRangeOcsStartStep specifies the note range.
-// noteRangeOctsStartStep(numerOfOctaves, startNote, step between each sampled note (in semitones)
+// cover is the IGraphic class to draw the cover
+// noteRangeOctsStartStep specifies the note range :
+// noteRangeOctsStartStep(numerOfOctaves, startNote, step between each sampled note (in semitones))
 // volRange(minVolume, maxVolume, volumeStep)
 // last args are 
 // time to hold note down (eg. here it's 300 milliseconds)
-// length of each sample (here 4000 milliseconds)
-SampleRobot robbie = new SampleRobot("myinstrument",graphic,noteRangeOctsStartStep(1,36,6),
+// length of each sample (here 4000 milliseconds ie 4 seconds)
+SampleRobot robbie = new SampleRobot("myinstrument",cover,noteRangeOctsStartStep(1,36,6),
                                      volRange(0,127,80),300,4000);
 ```

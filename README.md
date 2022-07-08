@@ -10,6 +10,8 @@ See more on Decent Sampler at https://www.decentsamples.com/product/decent-sampl
 
 See this video for original overview / explanation : https://www.youtube.com/watch?v=h81GG_9Qmto
 
+And this video for the June 1st, update : https://www.youtube.com/watch?v=P-pL3Y9ZX-Q
+
 ### Update June 1st 2022
 
 The sampling robot now also makes a cover, add some standard effects and can sample at a range of velocities.
